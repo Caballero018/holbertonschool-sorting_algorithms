@@ -85,5 +85,5 @@ void quick_sort(int *array, size_t size)
 
 	end = size - 1;
 
-	quicksort(array, start, end, size);
+	quick_s(array, start, end, size);
 }
