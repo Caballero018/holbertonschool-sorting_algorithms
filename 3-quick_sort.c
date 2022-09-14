@@ -64,9 +64,9 @@ void quick_s(int *array, int start, int last, size_t size)
 
 	if (last > start)
 	{
-		piv = division(array, start, last, size);
-		qs(array, start, piv - 1, size);
-		qs(array, piv + 1, last, size);
+		piv = separation(array, start, last, size);
+		quick_s(array, start, piv - 1, size);
+		quick_s(array, piv + 1, last, size);
 	}
 }
 
